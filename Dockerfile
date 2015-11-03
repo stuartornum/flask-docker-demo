@@ -7,4 +7,6 @@ RUN pip install -r /requirements.txt
 
 ADD . /opt
 
+WORKDIR /opt
+ENTRYPOINT ["python","app.py"]
 EXPOSE 5000
