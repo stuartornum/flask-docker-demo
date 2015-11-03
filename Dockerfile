@@ -7,3 +7,4 @@ RUN pip install -r /requirements.txt
 
 ADD . /opt
 
+EXPOSE 5000
