@@ -1,9 +1,11 @@
+import time
+
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'Hello World! {0}'.format(time.strftime("%H:%M:%S", time.gmtime()))
 
 
 @app.route('/error')
